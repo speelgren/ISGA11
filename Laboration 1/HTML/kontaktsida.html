@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+
+<html lang="sv" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="Laboration 1 ISGA11">
+    <meta name="keywords" content="HTML, CSS">
+    <meta name="author" content="Johan Lindhe">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bilförsäljning AB</title>
+    <link rel="shortcut icon" type="image/x-icon" href="favicon/favicon.ico">
+    <link rel="stylesheet" href="../CSS/kontakt.css">
+    <link rel="stylesheet" href="../CSS/style.css">
+  </head>
+<body>
+
+ <!-- Logga från https://pixabay.com/sv/illustrations/anka-gräsand-ankbonde-transparent-1978680/ -->
+
+    <header>
+      <img src="../Bilder/duck.png" alt="Logga Anka" id="logo"/>
+      <h2>Bilförsäljning AB</h2>
+    </header>
+
+    <!-- Menyn  -->
+
+    <div class="menu">
+      <nav>
+      <ul>
+        <li><a href="../index.html">Hem</a></li>
+        <li><a href="forsalj.html">Artiklar</a>
+            <ul>
+                <li><a href="https://www.tesla.com/sv_se/models" target="_blank">Tesla</a></li>
+                <li><a href="https://ford.se/erbjudanden-privat/mach-e" target="_blank">Ford</a> </li>
+                <li><a href="https://www.fiat.se/" target="_blank">Fiat</a></li>
+            </ul>
+          </li>
+        <li><a href="#">Kontakta oss</a></li>
+      </ul>
+      </nav>
+      </div>
+      <br><br>
+
+      <!-- Kontaktpersoner -->
+    <h2>Kontakta vår personal</h2>
+    <br>
+    <div id="kontakt3">
+        <div class="kontakt">
+            <h3>Johan Lindhe</h3>
+            <h4>Säljansvarig</h4>
+                <p>0722213418</p>
+                <p><a href="mailto:lindhe1999@gmail.com">lindhe1999@gmail.com</a></p>
+            </div>
+        <br>
+     <div class="kontakt2">
+         <h3>Patrik Johansson</h3>
+         <h4>Säljare</h4>
+                <p>0722214621</p>
+                <p><a href="mailto:patrik.johansson@bilföretag.se">patrik.johansson@bilföretag.se</a></p>
+        </div>
+    </div><br>
+
+<!-- Formulär som fylls i om du vill bli kontaktad. Du måste fylla i vissa uppgifter -->
+  <div class="formulär">
+     <h3>Vill du att vi kontaktar dig?</h3><br>
+     <h4>Fyll då i formuläret nedanför</h4>
+        <form>
+             <div>
+                  <label>Ditt namn</label><br>
+                    <input type="text" required id="text"/>
+            </div>
+                <br>
+                <div>
+                    <label>Din mailadress</label><br>
+                    <input type="email" required id="email">
+                </div>
+                <br>
+                <div>
+                    <label>Telefonnummer</label><br>
+                    <input type="number" required id="number">
+                </div>
+            <br>
+
+            <div>
+                    <label>Beskriv ditt ärende</label><br>
+                    <textarea id="arende"></textarea>
+            </div>
+            <br>
+            <div>
+                  <label>Vilken av våra butiker bor du närmast</label><br>
+                  <select name="devices">
+                    <option value="#">Karlstad</option>
+                    <option value="#">Sunne</option>
+                    <option value="#">Deje</option>
+                  </select>
+            </div>
+            <br>
+            <div>
+                  <label>Är du kund sedan tidigare</label><br>
+                  <input type="radio" name="tidigarekund" value="rea"/>Ja
+                  <input type="radio" name="tidigarekund" value="interea" checked="checked" />Nej
+            </div>
+            <br>
+
+              <input type="submit" name="Skicka" value="Skicka"/>
+              <input type="reset">
+
+            </form>
+        </div>
+
+
+<!-- Öppetider och vägbeskrivning till butiken, även samma footer som för de andra sidorna -->
+<div id="butik">
+    <div class="öppet">
+        <h3>Vill du besöka vår butik?</h3>
+        <br>
+        <h4>Öppettider</h4>
+
+        <p><b>Måndag-Fredag</b> 10:00-17:00</p>
+        <p><b>Lördag</b> 12:00-16:00</p>
+        <p><b>Söndag</b> 10:00-14:00</p>
+    </div>
+
+    <div class ="maps2">
+        <h3>Hitta till oss</h3>
+        <br>
+        <p>Vi finns på Universitetsgatan 2, 651 88 Karlstad</p>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1227.8697237018357!2d13.5827090245184!3d59.40599131929506!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xa20ecf411a74d336!2zNTnCsDI0JzIyLjEiTiAxM8KwMzQnNTQuMCJF!5e0!3m2!1ssv!2sse!4v1643046383386!5m2!1ssv!2sse" allowfullscreen="" id="maps2"></iframe>
+    </div>
+</div>
+<hr>
+<footer>
+  <p class="footer">
+    Telefonnummer: 555-2315
+    <br>
+      <a href="mailto:johalind166@student.kau.se">johalind166@student.kau.se</a>
+  </p>
+  </footer>
+    </body>
+    </html>

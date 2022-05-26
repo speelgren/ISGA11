@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+
+<html lang="sv" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="Laboration 1 ISGA11">
+    <meta name="keywords" content="HTML, CSS">
+    <meta name="author" content="Robin Johansson Speelgren">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bilförsäljning AB</title>
+    <link rel="shortcut icon" type="image/x-icon" href="favicon/favicon.ico">
+    <link rel="stylesheet" href="CSS/style.css">
+  </head>
+<body>
+
+<!-- Logga från https://pixabay.com/sv/illustrations/anka-gräsand-ankbonde-transparent-1978680/ -->
+
+<header>
+  <img src="Bilder/duck.png" alt="Logga Anka" id="logo"/>
+  <h2>Bilförsäljning AB</h2>
+</header>
+
+<!-- Samma meny för alla sidor -->
+
+<div class="menu">
+ <nav>
+  <ul>
+    <li><a href="#">Hem</a></li>
+    <li><a href="html/forsalj.html">Artiklar</a>
+      <ul>
+        <li><a href="https://www.tesla.com/sv_se/models" target="_blank">Tesla</a></li>
+        <li><a href="https://ford.se/erbjudanden-privat/mach-e" target="_blank">Ford</a> </li>
+        <li><a href="https://www.fiat.se/" target="_blank">Fiat</a></li>
+      </ul>
+  </li>
+    <li><a href="html/kontaktsida.html">Kontakta oss</a></li>
+  </ul>
+ </nav>
+</div>
+
+<!-- GOOGLE MAPS -->
+
+  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1227.8697237018357!2d13.5827090245184!3d59.40599131929506!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xa20ecf411a74d336!2zNTnCsDI0JzIyLjEiTiAxM8KwMzQnNTQuMCJF!5e0!3m2!1ssv!2sse!4v1643046383386!5m2!1ssv!2sse" id="maps"></iframe>
+
+<!-- Basic formulär -->
+
+<form class="formular" action="https://www.kau.se/informatik" target="_blank" method="post">
+  <h5>Sök bland artiklar</h5>
+      <label><strong>Märke</strong></label>
+        <br>
+          <select name="brand" id="brand">
+            <option value="choose">Välj..</option>
+            <option value="mercedes">Mercedes</option>
+            <option value="volvo">Volvo</option>
+            <option value="audi">Audi</option>
+            <option value="toyota">Toyota</option>
+          </select>
+        <br><br>
+          <strong>Model</strong>
+          <br>
+          <input type="text" name="model" placeholder="Skriv...">
+          <br><br>
+          <strong>Sök internt eller externt</strong>
+          <input type="radio" name="intex" id="intern" class="intex">
+          <label for="intern" class="intex">Internt</label>
+          <br><br>
+          <input type="radio" name="intex" id="extern"  class="intex">
+          <label for="extern" class="intex">Externt</label>
+          <br><br>
+          <textarea name="model" placeholder="Beskriv dina synder..." required></textarea>
+          <label id="handling">
+            Jag accepterar konsekvesen av mina handlingar
+          </label>
+          <input type="checkbox" name="accept" required class="accept">
+          <br>
+          <input type="submit" value="Sök" id="knapp">
+          <input type="reset">
+
+</form>
+
+<!-- Reklambild från https://pixabay.com/sv/photos/bil-väg-trafik-stad-gata-fordon-5806415/ -->
+
+<!-- artikelbilder från https://pixabay.com/ -->
+
+<h4 id="till-salu">Artiklar ute till salu just nu:</h4>
+
+<div class="border">
+    <a href="HTML/forsalj.html">
+      <img src="Bilder/america1.jpg" alt="Bild på bil" class="bild"></a>
+    <a href="HTML/forsalj.html" class="link"><h3>American</h3></a>
+<p><strong>Lorem ipsum</strong> dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget <em>dolor</em>. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.<br>
+  <a href="HTML/forsalj.html">Est laborum: $123,400.00</a>.
+</p>
+    <h5>
+      <a href="https://goo.gl/maps/xmMNZimHyxjiMSJ39" target="_blank" class="kartlank">Kartlänk</a>
+    </h5>
+</div>
+
+<div class="border">
+    <a href="https://www.youtube.com/watch?v=0Mzy68cV0Sk" target="_blank">
+      <img src="Bilder/fiat1.jpg" alt="Bild på bil" class="bild"></a>
+        <a href="HTML/forsalj.html" class="link"><h3>Fiat</h3></a>
+<p>Lorem ipsum dolor sit amet, <strong>consectetuer</strong> adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis <em>parturient</em> montes, nascetur ridiculus mus.<br>
+  <a href="HTML/forsalj.html">Est laborum: $210,213.00</a>.
+</p>
+    <h5>
+      <a href="https://goo.gl/maps/2AY7Jzff6vKPHkDQ9" target="_blank" class="kartlank">Kartlänk</a>
+    </h5>
+</div>
+
+<div class="border">
+    <a href="https://www.docbrown.info/" target="_blank">
+      <img src="Bilder/delorean.jpg" alt="Bild på bil" class="bild"></a>
+        <a href="HTML/forsalj.html" class="link"><h3>De Lorean</h3></a>
+<p>Lorem <strong>ipsum dolor</strong> sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes. <em>Requirere 1.21 jigowatts</em><br>
+  <a href="https://plato.stanford.edu/entries/spacetime-theories/#GeneRelaRelaMoti" target="_blank">Est laborum: $900,012.00</a>.
+</p>
+    <h5>
+      <a href="https://goo.gl/maps/27vk5E3txeaDi7ko8" target="_blank" class="kartlank">Kartlänk</a>
+    </h5>
+</div>
+
+<hr>
+
+<footer>
+  <p class="footer">
+    Telefonnummer: 555-2315
+    <br>
+      <a href="mailto:robijoha111@student.kau.se">robijoha111@student.kau.se</a>
+  </p>
+</footer>
+
+</body>
+</html>

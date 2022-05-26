@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap');
+
+/* Boxar med info om kontaktpersoner */
+
+.kontakt {
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+  height: 200px;
+  width: 250px;
+  border: 2px solid #212529;
+  text-align: center;
+}
+
+.kontakt2{
+  margin-left: 15px;
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+  height: 200px;
+  width: 250px;
+  border: 2px solid #212529;
+  text-align: center;
+}
+
+/* Fomuläret ifall du vill bli kontaktad */
+
+.formulär {
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  height: 580px;
+  width: 511px;
+  border: 2px solid #212529;
+}
+
+textarea {
+  height: 50px;
+  width: 250px;
+}
+
+/* Lådor med info om butikens öppetider och plats samt footern */
+
+.öppet{
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  height: 300px;
+  width: 400px;
+  border: 2px solid #212529;
+  text-align: center;
+}
+
+.maps2{
+  text-align: center;
+  padding-bottom: 10px;
+  margin-left: 15px;
+  margin-bottom: 10px;
+  padding-left: 10px;
+  height: 300px;
+  width: 400px;
+  border: 2px solid #212529
+}
+
+#kontakt3 {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#butik {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.footer2{
+  padding-top: 15px;
+  padding-bottom: 15px;
+  background-color: antiquewhite;
+  text-align: center;
+}

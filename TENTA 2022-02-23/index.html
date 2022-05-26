@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<!--Skriv din anonymitetskod här: ISGA11-0031-ZDL -->
+<html lang="sv" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tentamen</title>
+    <link rel="stylesheet" href="styles/style.css">
+  </head>
+  <body>
+
+<header>
+	  <!-- plats för logotyp, logo.png-->
+    <img src="resources/logo.png" alt="logotyp">
+	  <h1>Intresseföreningen Fjäderfän & Båtar</h1>
+
+  <nav>
+		<ul>
+		  <li><a href="#">Hem</a></li>
+		  <li class="over_meny"><a href="#">Fjäderfän</a>
+  			<ul class="under_meny">
+  			  <li><a href="#">Mesar</a></li>
+  			  <li><a href="#">Finkar</a></li>
+  			  <li><a href="#">Kråkor</a></li>
+  			  <li><a href="#">Gökar</a></li>
+  			</ul>
+		  </li>
+		  <li class="over_meny"><a href="#">Båtar</a>
+  		  <ul class="under_meny">
+    			<li><a href="#">Segelbåtar</a></li>
+    			<li><a href="#">Pulpeter</a></li>
+    			<li><a href="#">Roddbåtar</a></li>
+    			<li ><a href="#">Ubåtar</a></li>
+  			</ul>
+		</li>
+		  <li><a href="#">Kontakta oss</a></li>
+		</ul>
+  </nav>
+</header>
+
+<main>
+  <section>
+        <h2>Allt om fjäderfän</h2>
+        <!-- plats för bild på en gök, gok.png-->
+        <img src="resources/images/gok.png" alt="bild på en gök">
+
+        <p>Mitt intresse för fjäderfän väcktes en vårmorgon 1896 då jag steg upp på morgonen
+          och fick en uppenbaraelse, jag skulle berika värden med mitt fågelintresse och tvinga
+          alla som inte gillar dem att gå med i föreningen ändå. För att kunna leva på mitt intresse
+          har jag valt en annorlunda strategi, nämligen att tvångsansluta alla jag känner och tvinga
+          dem att betala en hutlös årsavgift på inte mindre än 50 000 riksdaler.
+        </p>
+  </section>
+
+  <section>
+        <h2>Allt om Båtar</h2>
+        <!-- plats för bild på en båt, bat.png-->
+        <img src="resources/images/bat.png" alt="bild på en båt">
+
+        <p>Mitt intresse för båtar väcktes en vårmorgon 1897 då jag steg upp på morgonen
+          och fick en uppenbaraelse, jag skulle berika världen med mitt båtintresse och tvinga
+          alla som inte gillar båtar att gå med i min förening ändå. För att kunna leva på mitt intresse
+          har jag valt en annorlunda strategi, nämligen att tvångsansluta alla jag känner och tvinga
+          dem att betala en hutlös årsavgift på inte mindre än 50 000 riksdaler.
+        </p>
+  </section>
+
+  <section>
+        <h2>Kontakta oss</h2>
+        <p>Fyll i formuläret nedan så återkommer vi till dig!</p>
+
+        <!-- plats för formulär-->
+        <form action="#" method="get">
+
+          <label for="name">Fyll i namn</label><br>
+          <input type="text" name="name" id="name" required><br>
+          <label for="pris">Välj hur mycket du vill betala för att vi ska svara</label><br>
+
+          <select name="prislista" id="pris">
+            <option value="100">100 kr</option>
+            <option value="250">250 kr</option>
+            <option value="500">500 kr</option>
+          </select>
+
+          <fieldset>
+            <legend>Välj hur du vill betala</legend>
+            <input type="radio" name="betala" id="swish">
+            <label for="swish">Betala med swish</label><br>
+            <input type="radio" name="betala" id="kontant" checked>
+            <label for="kontant">Betala kontant</label>
+          </fieldset>
+
+            <label for="fraga">Din fråga:</label><br>
+            <textarea name="fraga" id="fraga" rows="10" cols="20"></textarea><br>
+
+            <input type="submit" value="Skicka fråga">
+
+        </form>
+  </section>
+</main>
+
+<footer>
+      <span>&copy; Föreningen fågel och fisk 2022</span>
+</footer>
+  </body>
+</html>

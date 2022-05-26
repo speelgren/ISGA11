@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap');
+
+* {
+  font-family: Roboto, san-serif;
+  background-color: #F8F9FA;
+  color: #212529;
+}
+
+/* Logga och företagsnamn */
+
+header h2 {
+  padding-top: 25px;
+  padding-left: 115px;
+}
+
+#logo {
+  float: left;
+  margin-left: 5px;
+}
+
+/* Dropdown meny */
+
+.menu {
+  margin-top: 50px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+nav ul {
+  padding: 0px;
+  margin: 0px;
+  float: left;
+}
+
+nav ul li {
+  display: inline-block;
+  list-style: none;
+  position: relative;
+}
+
+nav ul li a {
+  display: block;
+  padding: 0 15px;
+  text-decoration: none;
+  line-height: 30px;
+}
+
+nav ul li a:hover {
+  background: gray;
+}
+
+nav ul ul {
+  position: absolute;
+  display: none;
+}
+
+nav ul li:hover > ul {
+  display: block;
+  z-index: 1;
+}
+
+nav ul ul li {
+  display: list-item;
+  position: relative;
+  float: left;
+}
+
+/* Google Maps */
+
+#maps {
+  margin-top: 100px;
+  margin-bottom: 10px;
+  height: 350px;
+  width: 650px;
+  display:block;
+  position:relative;
+  border: 2px solid #212529;
+}
+
+#maps:hover {
+  border: 2px solid #E76F51;
+}
+
+/* Låda ovanför artiklar */
+
+#till-salu {
+  padding-left: 10px;
+  margin-top: 10px;
+  border: 2px solid #212529;
+  width: 640px;
+  margin-bottom: 5px;
+}
+
+#till-salu:hover {
+  border: 2px solid #E76F51;
+}
+
+/* Sid-formulär */
+
+.formular {
+  margin-left: 660px;
+  padding-bottom: 10px;
+  height: auto;
+  width: 10%;
+  min-width: 170px;
+  max-width: 200px;
+  position: absolute;
+  text-align: center;
+  border: 2px solid #212529;
+}
+
+.formular:hover {
+  border: 2px solid #E76F51;
+}
+
+#knapp {
+  margin-top: 10px;
+  height: auto;
+  width: auto;
+}
+
+.intex {
+  float: left;
+}
+
+#handling {
+  text-align: center;
+  font-size: 5px;
+}
+
+#brand {
+  margin-top: 5px;
+}
+
+/* Ram för artiklar */
+
+.border {
+  margin-bottom: 5px;
+  margin-right: 10px;
+  height: 230px;
+  width: 650px;
+  border: 2px solid #212529;
+}
+
+.border:hover {
+  border: 2px solid #E76F51;
+}
+
+/* Artikelbilder */
+
+.bild {
+  float: left;
+  margin-left: 10px;
+  margin-top: 10px;
+  margin-right: 5px;
+  border: 1px solid #212529;
+}
+
+.bild:hover {
+  border: 1px solid #E76F51;
+}
+
+/* Länk-css */
+
+.link {
+  color: #14213D;
+  text-decoration: none;
+  display: inherit;
+}
+
+.link:hover {
+  color: #E76F51;
+}
+
+.kartlank {
+  margin-left: 10px;
+}
+
+.footer {
+  margin-top: 10px;
+  text-align: center;
+}

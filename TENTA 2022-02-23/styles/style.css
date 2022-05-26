@@ -1,0 +1,154 @@
+/* ISGA11-0031-ZDL */
+
+/* Länka in webfonten "Open Sans" från google fonts här*/
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+/* Text ser annorlunda ut från referenspdf:n. */
+/* Antaganden skrivs som kommentarer */
+
+* {
+  box-sizing: border-box;
+
+}
+html {
+  font-size: 20px;
+  font-family: 'Open Sans', garamond;
+}
+header>img {
+  width: 100px;
+}
+
+/* ****************************************************************************** */
+/* Deluppgift 2, Meny */
+
+nav {
+  text-align: right; /* Justera meny till höger */
+  list-style-type: none;
+  background-color: #333;
+  padding-top: 2.5px; /* Padding för navbar */
+  padding-bottom: 2.5px; /* Padding för navbar */
+}
+
+ul {
+  margin-right: 100px; /* Mellanrum mellan högerkant och menyvalen */
+}
+
+ul li {
+  position: relative;
+  display: inline-block;
+  padding: 0 50px; /* Mellanrum mellan menyvalen */
+}
+
+ul li a {
+  display: block;
+  color: #ccc;
+  text-decoration: none;
+}
+
+.under_meny {
+  display: none;
+  min-width: 100%;
+  background: #333;
+  color: #ccc;
+  position: absolute;
+  z-index: 1000;
+
+  /* Centrera undermeny: */
+  padding: 10px 0;
+  margin: 0;
+  right: 0;
+  text-align: center;
+}
+
+  /* Visa undermeny */
+.over_meny:hover .under_meny {
+  display: block;
+}
+
+/* Kommentar efter inlämning:
+   Borde gjort en klass per meny.
+*/
+
+/* ****************************************************************************** */
+/* Deluppgift 3, Styling och layout */
+
+/* Till viss del tagit hjälp ang. Flexbox från https://css-tricks.com/snippets/css/a-guide-to-flexbox/ */
+
+body {
+  background-image: url("../resources/images/background.jpg");
+}
+
+header {
+  /* Svårt att tyda på referenspdf:n om border-radius ska finnas på header */
+  border-top-left-radius: 0.3rem;
+  border-top-right-radius: 0.3rem;
+  border: 1px solid #333;
+}
+
+header, main {
+  background-color: white;
+}
+
+header img, h1 {
+  display: inline;
+  vertical-align: middle;
+}
+
+main {
+  /* font-size: 10px; för att efterlikna referenspdf:n */
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+  /* Enligt referenspdf:n ser det inte ut som att border radius ska vara 0.3rem i de övre hörnen på main*/
+  border-bottom-left-radius: 0.3rem;
+  border-bottom-right-radius: 0.3rem;
+}
+
+section {
+  border-radius: 0.3rem;
+  border: 1px solid #333;
+  width: 30%;
+  padding: 10px 10px;
+  margin-top: 10px;
+}
+
+section h2 {
+  text-align: center; /* Rubrik centrerad */
+}
+
+section img {
+  width: 100%;
+  height: auto;
+}
+
+footer {
+  /* Svårt att tyda på referensbilden om border-radius ska finnas på footer */
+  border-radius: 0.3rem;
+  padding: 10px 10px;
+  color: #ccc;
+  background-color: #333;
+  text-align: center;
+}
+
+/* ****************************************************************************** */
+/*Deluppgift 4, Responsivitet och formulärstyling */
+
+/* MOBIL */
+@media screen and (max-width: 400px) {
+
+
+
+}
+
+/* PLATTA */
+@media screen and (max-width: 401px) and (min-width: 875px) {
+
+
+
+}
+
+/* Gjorde ej klart. Fokuserade på uppgift 1, 2 och 3 istället. */
+
+
+/* ****************************************************************************** */

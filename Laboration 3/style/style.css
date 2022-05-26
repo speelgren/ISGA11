@@ -1,0 +1,292 @@
+/*
+*
+* Colour Palette
+* https://coolors.co/palette/e63946-f1faee-a8dadc-457b9d-1d3557
+*
+*
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue&display=swap');
+
+html, body {
+  font-family: monospace;
+}
+
+header p {
+  margin-top: -10px;
+  padding-bottom: 10px;
+}
+
+#alt_p {
+  display: none;
+}
+
+#last_p {
+  display: none;
+}
+
+nav ul {
+  display: flex;
+  list-style-type: none;
+  align-items: center;
+  background-color: #e03663;
+  padding: 10px 10px;
+}
+
+nav ul li a {
+  color: #f1faee;
+  padding-right: 10px;
+  text-align: center;
+}
+
+nav ul li a:hover {
+  color: #1d3557;
+}
+
+nav ul li img {
+  height: auto;
+  width: 50px;
+  margin: 0 10px;
+}
+
+#fig_2 {
+  display: none;
+}
+
+#fig_3 {
+  display: none;
+}
+
+figure img {
+  width: 100%;
+  height: auto;
+  border: 1px solid #e03663;
+}
+
+.container {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+main {
+  padding: 10px;
+  margin: 0 10px;
+  width: 85%;
+}
+
+main p {
+  width: 560px;
+  height: auto;
+}
+
+iframe {
+  border: none;
+}
+
+#hidden_video {
+  display: none;
+}
+
+aside {
+  padding: 10px;
+  margin: 0 10px;
+  width: 15%;
+}
+
+#a_bild1 {
+  width: 100%;
+  height: auto;
+  margin: 10px 0;
+}
+
+#a_bild2 {
+  width: 100%;
+  height: auto;
+}
+
+#hidden {
+  display: none;
+}
+
+footer {
+  text-align: center;
+  background-color: #a8dadc;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  padding: 1px 0;
+}
+
+footer p a {
+  text-decoration: none;
+}
+
+footer p a:hover {
+  color: #f1faee;
+}
+
+/*
+* Enhet 1 enligt Mobile First.
+*/
+
+@media screen and (max-width: 400px) {
+
+  body {
+    /* Djävulens favorifont */
+    font-family: 'Comic Neue', cursive;
+    background-color: red;
+  }
+
+  #listed_p {
+    display: none;
+  }
+
+  #alt_p {
+    display: none;
+  }
+
+  #last_p {
+    display: block;
+  }
+
+  nav ul {
+    flex-direction: column;
+    font-size: 15px;
+    background-color: blue;
+    margin-top: -10px;
+  }
+
+  nav ul li a {
+    color: yellow;
+  }
+
+  nav ul li img {
+    display: none;
+  }
+
+  figure img {
+    border: 1px solid #f1faee;
+  }
+
+  #fig_1 {
+    display: none;
+  }
+
+  #fig_3 {
+    display: block;
+  }
+
+  iframe {
+    width: 100%;
+    height: auto;
+  }
+
+  #listed_video {
+    display: none;
+  }
+
+  #hidden_video {
+    display: block;
+  }
+
+  main {
+    background-color: white;
+  }
+
+  main p {
+    width: 100%;
+    height: auto;
+    color: #e71d36;
+    font-weight: bold;
+  }
+
+  aside {
+    display: none;
+  }
+
+  #hidden {
+    display: block;
+    margin: 10% auto;
+    width: 95%;
+    height: auto;
+  }
+
+  footer {
+    display: none;
+  }
+
+}
+
+/*
+* Enhet 2
+*/
+
+@media screen and (min-width: 401px) and (max-width: 800px) {
+
+  body {
+    background-color: #a8dadc;
+  }
+
+  #listed_p {
+    display: none;
+  }
+
+  #alt_p {
+    display: block;
+  }
+
+  nav ul {
+    background-color: #1d3557;
+  }
+
+  nav ul li a {
+    color: #e03663;
+  }
+
+  nav ul li a:hover {
+    color: #f1faee;
+  }
+
+  #fig_1 {
+    display: none;
+  }
+
+  #fig_2 {
+    display: block;
+  }
+
+  main p {
+    width: 100%;
+    height: auto;
+  }
+
+  footer {
+    background-color: #f1faee;
+  }
+
+}
+
+/*
+* Enhet 3
+*/
+
+@media screen and (min-width: 801px) {
+
+  body {
+    margin: 0 5%;
+  }
+
+}
+
+/*
+* För att Yotube-videon inte
+* ska "skära" in i sidmenyn...
+*/
+
+@media screen and (max-width: 755px) {
+
+  iframe {
+    display: block;
+    width: 100%;
+  }
+
+}
